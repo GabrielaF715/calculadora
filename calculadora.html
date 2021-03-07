@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada</title>
+    <!-- Inclui o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display" id="display">
+                0
+            </div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValorTecla('7')">7</div>
+                <div class="tecla" onclick="pegarValorTecla('8')">8</div>
+                <div class="tecla" onclick="pegarValorTecla('9')">9</div>
+                <div class="tecla" onclick="pegarOperador('/')">/</div>
+                <div class="tecla" onclick="limpar()">C</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValorTecla('4')">4</div>
+                <div class="tecla" onclick="pegarValorTecla('5')">5</div>
+                <div class="tecla" onclick="pegarValorTecla('6')">6</div>
+                <div class="tecla" onclick="pegarOperador('*')">*</div>
+                <div class="tecla" onclick="pegarOperador('%')">%</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValorTecla('1')">1</div>
+                <div class="tecla" onclick="pegarValorTecla('2')">2</div>
+                <div class="tecla" onclick="pegarValorTecla('3')">3</div>
+                <div class="tecla" onclick="pegarOperador('-')">-</div>
+                <div class="tecla igual" onclick="verificarTeclaIgual()">=</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla zero" onclick="pegarValorTecla('0')">0</div>
+                <div class="tecla" onclick="pegarValorTecla(',')">,</div>
+                <div class="tecla" onclick="pegarOperador('+')">+</div>
+            </div>
+
+            <!-- Exemplo de Estrutura Condicional IF ELSE (SE SENÃO) -->
+            <!-- <h3>Verificar idade</h3>
+
+            <p>
+                <label>Idade</label>
+                <input type="number" id="idade">
+            </p>
+
+            <p>
+                <button onclick="verificarIdade()">Verificar</button>
+            </p> -->
+
+        </div> <!-- fecha /calculadora -->
+    </div> <!-- fecha /container -->
+
+    <!-- Inclui o arquivo de som -->
+    <audio src="sfx/blip.ogg" id="blip"></audio>
+
+    <!-- Inclui o arquivo JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
